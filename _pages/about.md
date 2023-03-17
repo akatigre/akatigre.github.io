@@ -26,4 +26,4 @@ Currently my research interest lies in **human-friendly manipulation of images a
 
 - **M.S.** in Graduate School of AI, **Korea Advanced Institute of Science and Technology (KAIST)**, <font size="3">Mar. 2021 - Feb. 2023</font> 
 
-- **B.E.** in Computer Science Engineering, **Daegu Gyeongbuk Institute of Science & Technology (DGIST)**, <font size="3">Mar. 2017 - Feb. 2021</font>
+- **B.S.** in Applied Statistics, **Yonsei University**, <font size="3">Mar. 2017 - Feb. 2021</font>
