@@ -14,6 +14,9 @@ Currently my research interest lies in **human-friendly manipulation of images a
 
 
 ## Conference Publications
+- **<font size="4">Touch Only What Needs Touching: Novel Evaluation Protocol on the Text Alignment and Preservation Abilities of Text-Guided Manipulation Models</font>**\\
+Soohyun Ryu\*, **Yoonjeon Kim\***, Joowon Kim, June yong Yang, Eunho Yang <font size="3">(* : equal contribution)
+Under Review
 
 - **<font size="4">Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance</font>**
 [[paper]](https://openreview.net/forum?id=47B_ctC4pJ) \\
