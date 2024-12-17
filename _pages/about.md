@@ -10,12 +10,13 @@ redirect_from:
 
 Hello, I am a Ph.D candidate at [Machine Learning and Intelligence Lab](https://mli.kaist.ac.kr/) (MLILAB) in KAIST, advised by [Prof. Eunho Yang](https://sites.google.com/site/yangeh/publications).
 
-Currently my research interest lies in **human-friendly manipulation of images and videos**. More specifically, I am focusing on (1) Motion transfer from arbitrary videos into a static image, (2) Evaluation on text-guided manipulation models and (3) Image-guided video manipulation via diffusion models.
+Currently my research interest lies in **human-friendly manipulation of images and videos**. More specifically, I am focusing on generating images in auto-regressive models, conditioned on text guidance.
 
 
 ## Conference Publications
-- **<font size="4">Touch Only What Needs Touching: Novel Evaluation Protocol on the Text Alignment and Preservation Abilities of Text-Guided Manipulation Models</font>**\\
-Soohyun Ryu\*, **Yoonjeon Kim\***, Joowon Kim, June yong Yang, Eunho Yang <font size="3">(* : equal contribution)
+- **<font size="4">Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing</font>**
+[[paper]](https://arxiv.org/pdf/2410.11374) \\
+**Yoonjeon Kim\***, **Soohyun Ryu\***, Yeonsung Jung, Hyunkoo Lee, Joowon Kim, June Yong Yang, Jaeryong Hwang, Eunho Yang\\
 Under Review
 
 - **<font size="4">Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance</font>**
@@ -23,6 +24,10 @@ Under Review
 **Yoonjeon Kim**, Hyunsu Kim, Junho Kim, Yunjey Choi, Eunho Yang\\
 <span style="color:darkred">**ICLR**</span> 2023
 
+- **<font size="4">Sequential targeting: A continual learning approach for data imbalance in text classification</font>**
+[[paper]](https://www.sciencedirect.com/science/article/abs/pii/S095741742100508X) \\
+Joel Jang, Yoonjeon Kim, Kyoungho Choi, Sungho Suh \\
+<span style="color:darkred">**Expert Systems with Applications**</span> 2021
 
 ## Education
 - **Ph.D.**  in Graduate School of AI, **Korea Advanced Institute of Science and Technology (KAIST)**, <font size="3">Mar. 2023 - Present</font> 
