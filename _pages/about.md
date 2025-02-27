@@ -17,7 +17,7 @@ Currently my research interest lies in **human-friendly manipulation of images a
 - **<font size="4">Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing</font>**
 [[paper]](https://arxiv.org/pdf/2410.11374) \\
 **Yoonjeon Kim\***, **Soohyun Ryu\***, Yeonsung Jung, Hyunkoo Lee, Joowon Kim, June Yong Yang, Jaeryong Hwang, Eunho Yang\\
-Under Review
+<span style="color:darkred">**CVPR**</span> 2025
 
 - **<font size="4">Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance</font>**
 [[paper]](https://openreview.net/forum?id=47B_ctC4pJ) \\
