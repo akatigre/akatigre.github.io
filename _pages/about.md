@@ -10,13 +10,17 @@ redirect_from:
 
 Hello, I am a Ph.D candidate at [Machine Learning and Intelligence Lab](https://mli.kaist.ac.kr/) (MLILAB) in KAIST, advised by [Prof. Eunho Yang](https://sites.google.com/site/yangeh/publications).
 
-Currently my research interest lies in **human-friendly manipulation of images and videos**. More specifically, I am focusing on generating images in auto-regressive models, conditioned on text guidance.
+Currently my research interest lies in **reasoning model robustness in both language and multi-modal domains**. More specifically, I am focusing on rigidity patterns that reasoning model exhibit and visual quesetion answering with reasoning.
 
+## Publications
+- **<font size="4">Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</font>**
+[[paper]](https://arxiv.org/abs/2505.17225) \\
+Doohyuk Jang\*, **Yoonjeon Kim\***, Chanjae Park, Hyun Ryu, Eunho Yang (*equal contribution) \\
+<span style="color:darkred">Preprint</span>
 
-## Conference Publications
 - **<font size="4">Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing</font>**
 [[paper]](https://arxiv.org/pdf/2410.11374) \\
-**Yoonjeon Kim\***, **Soohyun Ryu\***, Yeonsung Jung, Hyunkoo Lee, Joowon Kim, June Yong Yang, Jaeryong Hwang, Eunho Yang\\
+**Yoonjeon Kim\***, Soohyun Ryu\*, Yeonsung Jung, Hyunkoo Lee, Joowon Kim, June Yong Yang, Jaeryong Hwang, Eunho Yang (*equal contribution) \\
 <span style="color:darkred">**CVPR**</span> 2025
 
 - **<font size="4">Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance</font>**
@@ -26,8 +30,14 @@ Currently my research interest lies in **human-friendly manipulation of images a
 
 - **<font size="4">Sequential targeting: A continual learning approach for data imbalance in text classification</font>**
 [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S095741742100508X) \\
-Joel Jang, Yoonjeon Kim, Kyoungho Choi, Sungho Suh \\
+Joel Jang, **Yoonjeon Kim**, Kyoungho Choi, Sungho Suh \\
 <span style="color:darkred">**Expert Systems with Applications**</span> 2021
+
+## Invited Talk
+- **<font size="4">AI Technology Seminar hosted by KAIST AI Graduate School</font>** [[link]](https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=46270)
+
+## Work Experience
+- Research Intern, **NAVER Cloud**, <font size="3"> July. 2023 - Oct. 2023 </font>
 
 ## Education
 - **Ph.D.**  in Graduate School of AI, **Korea Advanced Institute of Science and Technology (KAIST)**, <font size="3">Mar. 2023 - Present</font> 
@@ -35,3 +45,16 @@ Joel Jang, Yoonjeon Kim, Kyoungho Choi, Sungho Suh \\
 - **M.S.** in Graduate School of AI, **Korea Advanced Institute of Science and Technology (KAIST)**, <font size="3">Mar. 2021 - Feb. 2023</font> 
 
 - **B.S.** in Applied Statistics, **Yonsei University**, <font size="3">Mar. 2017 - Feb. 2021</font>
+
+## Projects
+- A Study on Optimization and Network Interpretation Method for Large-Scale Machine Learning
+**National Research Foundation of Korea (NRF) \\
+grant funded by the Korea government (MSIT), Mar.2024-Feb.2027
+
+- Efficient Foundation Models on Intel Systems
+**Intel Corporation & NAVER**, Sep.2024-Aug.2027
+
+### Acamdeic Services
+- **Conference Reviewer**
+  - International Conference on Learning Representations (ICLR)
+  - Computer Vision and Pattern Recognition (CVPR)
