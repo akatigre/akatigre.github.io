@@ -14,12 +14,12 @@ Currently my research interest lies in **reasoning model robustness in both lang
 
 ## Publications
 - **<font size="4">Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</font>**
-[[paper]](https://arxiv.org/abs/2505.17225) \\
+[[paper]](https://arxiv.org/abs/2505.17225) [[code]](https://github.com/ReasoningTrap/ReasoningTrap) [[project page]](https://reasoningtrap.github.io/) \\
 Doohyuk Jang\*, **Yoonjeon Kim\***, Chanjae Park, Hyun Ryu, Eunho Yang (*equal contribution) \\
 <span style="color:darkred">Preprint</span>
 
 - **<font size="4">Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing</font>**
-[[paper]](https://arxiv.org/pdf/2410.11374) \\
+[[paper]](https://arxiv.org/pdf/2410.11374) [[code]](https://github.com/augclip/augclip_eval) [[project page]](https://augclip.github.io/)\\
 **Yoonjeon Kim\***, Soohyun Ryu\*, Yeonsung Jung, Hyunkoo Lee, Joowon Kim, June Yong Yang, Jaeryong Hwang, Eunho Yang (*equal contribution) \\
 <span style="color:darkred">**CVPR**</span> 2025
 
@@ -53,6 +53,9 @@ grant funded by the Korea government (MSIT), Mar.2024-Feb.2027
 
 - Efficient Foundation Models on Intel Systems
 **Intel Corporation & NAVER**, Sep.2024-Aug.2027
+
+- Naver-KAIST Hyper-Creative Center
+**NAVER Cloud**, Sep.2021-Aug.2023
 
 ### Acamdeic Services
 - **Conference Reviewer**
