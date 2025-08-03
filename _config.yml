@@ -107,6 +107,9 @@ author:
   bio              : "Ph.D student at Graduate School of AI, Korea Advanced Institute of Science and Technology (KAIST)"
   location         : "Daejeon, South Korea"
   links:
+    - label: "CV"
+      icon: "fas fa-download"
+      url: "/assets/files/cv_yoonjeon_kim.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yoonkim313@kaist.ac.kr"
