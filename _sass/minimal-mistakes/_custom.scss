@@ -1,0 +1,50 @@
+/* === Avatar / author panel polish === */
+.author__avatar {
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.author__avatar .avatar-wrap {
+  inline-size: clamp(112px, 22vw, 148px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--mm-bg, #f5f5f5);
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.author__avatar img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Subtle typography spacing under name/bio */
+.author__content h3,
+.author__content h2,
+.author__content .author__name {
+  margin-bottom: .35rem;
+}
+.author__bio {
+  color: var(--mm-muted, #5f6368);
+  line-height: 1.45;
+}
+
+/* Make figures in posts look consistent when you use class="portrait" */
+figure.portrait,
+img.portrait {
+  inline-size: clamp(220px, 40vw, 340px);
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0,0,0,.10);
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+/* Slightly nicer link row spacing in author block */
+.author__urls-wrapper .author__urls a {
+  gap: .35rem;
+}
