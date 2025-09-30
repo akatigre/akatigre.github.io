@@ -10,9 +10,14 @@ redirect_from:
 
 Hello, I am a Ph.D candidate at [Machine Learning and Intelligence Lab](https://mli.kaist.ac.kr/) (MLILAB) in KAIST, advised by [Prof. Eunho Yang](https://sites.google.com/site/yangeh/publications).
 
-Currently my research interest lies in **reasoning model robustness in both language and multi-modal domains**. More specifically, I am focusing on rigidity patterns that reasoning model exhibit and visual quesetion answering with reasoning.
+Currently my research interest lies in **enhancing reasoning model in both language and multi-modal domains**. More specifically, I am focusing on the thinking ability of diffusion-based large language models, in its natural way.
 
 ## Publications
+- **<font size="4">Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning</font>**
+[[paper]](https://drive.google.com/file/d/1xuB_Dz8K7sPWtGeH4sP-ag4K7ncaJwI3/view?usp=sharing) [[code]](https://github.com/akatigre/MASA-RL) \\
+**Yoonjeon Kim\***, Doohyuk Jang\*, Eunho Yang (*equal contribution) \\
+<span style="color:darkred">Preprint</span>
+
 - **<font size="4">Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</font>**
 [[paper]](https://arxiv.org/abs/2505.17225) [[code]](https://github.com/ReasoningTrap/ReasoningTrap) [[project page]](https://reasoningtrap.github.io/) \\
 Doohyuk Jang\*, **Yoonjeon Kim\***, Chanjae Park, Hyun Ryu, Eunho Yang (*equal contribution) \\
@@ -47,17 +52,17 @@ Joel Jang, **Yoonjeon Kim**, Kyoungho Choi, Sungho Suh \\
 - **B.S.** in Applied Statistics, **Yonsei University**, <font size="3">Mar. 2017 - Feb. 2021</font>
 
 ## Projects
-- A Study on Optimization and Network Interpretation Method for Large-Scale Machine Learning
-**National Research Foundation of Korea (NRF) \\
-grant funded by the Korea government (MSIT), Mar.2024-Feb.2027
+- A Study on Optimization and Network Interpretation Method for Large-Scale Machine Learning \\
+**National Research Foundation of Korea (NRF)**, Mar.2024-Feb.2027
 
-- Efficient Foundation Models on Intel Systems
+- Efficient Foundation Models on Intel Systems\\
 **Intel Corporation & NAVER**, Sep.2024-Aug.2027
 
-- Naver-KAIST Hyper-Creative Center
+- Naver-KAIST Hyper-Creative Center \\
 **NAVER Cloud**, Sep.2021-Aug.2023
 
 ### Acamdeic Services
 - **Conference Reviewer**
   - International Conference on Learning Representations (ICLR)
   - Computer Vision and Pattern Recognition (CVPR)
+  - Conference on Neural Information Processing Systems (NeurIPS)
