@@ -35,6 +35,21 @@ title: "Yoonjeon Kim"
 
     <article class="r-card">
       <div class="r-card-meta">
+        <span class="r-badge r-badge-review">Under Review</span>
+        <span class="r-card-year">2026</span>
+      </div>
+      <h2 class="r-card-title">Efficient Reinforcement for Visual-Textual Thinking with Discrete Diffusion Model</h2>
+      <p class="r-card-summary">A diffusion-based RL framework for interleaved visual-textual reasoning. Localized visual editing reduces GRPO rollout computation by 26.9%; factorized reward assignment resolves cross-modal credit assignment, yielding 38% gains over SFT.</p>
+      <p class="r-card-authors"><strong>Yoonjeon Kim</strong>, Yuhta Takida, Chieh-Hsin Lai, Eunho Yang, Yuki Mitsufuji</p>
+      <div class="r-card-footer">
+        <a class="r-link" href="https://drive.google.com/file/d/1h7yRqmKcIQcUClbH7h715Z77QWnCRB6n/view?usp=drive_link"><i class="fas fa-file-pdf"></i> paper</a>
+        <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+      </div>
+      <div class="r-abs-body">Unified multimodal foundation models have enabled both visual understanding and generation within a single framework. Building on this foundation, supervised fine-tuning and reinforcement learning have been employed to facilitate interleaved visual and textual thinking, tightly coupling image generation with textual reasoning. Existing works predominantly rely on autoregressive unified models as the backbone, which incurs substantial computational overhead due to full regeneration of image token sequences at every rollout step. In this work, we instead leverage multimodal discrete diffusion models to develop a reinforcement learning framework for interleaved reasoning. By exploiting bidirectional context modeling, our approach enables <em>localized visual editing</em>, allowing targeted modifications and reducing rollout computation during GRPO by 26.9% compared to full-image editing baselines, with only a minimal performance drop. However, bidirectional multimodal decoding in discrete diffusion models introduces a non-trivial challenge: rewards become implicitly coupled across interleaved image and text tokens, leading to spurious cross-modal credit assignment. To address this, we propose <em>factorized reward assignment</em> across text and vision streams, assigning rewards to their corresponding token segments for stable credit propagation. This yields 11.2% gains over joint reward assignment baselines and 38.04% improvements over the supervised fine-tuned model.</div>
+    </article>
+
+    <article class="r-card">
+      <div class="r-card-meta">
         <span class="r-badge r-badge-conf">ICML</span>
         <span class="r-card-year">2026</span>
       </div>
@@ -64,21 +79,6 @@ url={https://openreview.net/forum?id=Vl3tXPbjSH}
 }</code>
         </div>
       </div>
-    </article>
-
-    <article class="r-card">
-      <div class="r-card-meta">
-        <span class="r-badge r-badge-review">Under Review</span>
-        <span class="r-card-year">2025</span>
-      </div>
-      <h2 class="r-card-title">Efficient Reinforcement for Visual-Textual Thinking with Discrete Diffusion Model</h2>
-      <p class="r-card-summary">A diffusion-based RL framework for interleaved visual-textual reasoning. Localized visual editing reduces GRPO rollout computation by 26.9%; factorized reward assignment resolves cross-modal credit assignment, yielding 38% gains over SFT.</p>
-      <p class="r-card-authors"><strong>Yoonjeon Kim</strong>, Yuhta Takida, Chieh-Hsin Lai, Eunho Yang, Yuki Mitsufuji</p>
-      <div class="r-card-footer">
-        <a class="r-link" href="https://drive.google.com/file/d/1h7yRqmKcIQcUClbH7h715Z77QWnCRB6n/view?usp=drive_link"><i class="fas fa-file-pdf"></i> paper</a>
-        <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
-      </div>
-      <div class="r-abs-body">Unified multimodal foundation models have enabled both visual understanding and generation within a single framework. Building on this foundation, supervised fine-tuning and reinforcement learning have been employed to facilitate interleaved visual and textual thinking, tightly coupling image generation with textual reasoning. Existing works predominantly rely on autoregressive unified models as the backbone, which incurs substantial computational overhead due to full regeneration of image token sequences at every rollout step. In this work, we instead leverage multimodal discrete diffusion models to develop a reinforcement learning framework for interleaved reasoning. By exploiting bidirectional context modeling, our approach enables <em>localized visual editing</em>, allowing targeted modifications and reducing rollout computation during GRPO by 26.9% compared to full-image editing baselines, with only a minimal performance drop. However, bidirectional multimodal decoding in discrete diffusion models introduces a non-trivial challenge: rewards become implicitly coupled across interleaved image and text tokens, leading to spurious cross-modal credit assignment. To address this, we propose <em>factorized reward assignment</em> across text and vision streams, assigning rewards to their corresponding token segments for stable credit propagation. This yields 11.2% gains over joint reward assignment baselines and 38.04% improvements over the supervised fine-tuned model.</div>
     </article>
 
     <article class="r-card">

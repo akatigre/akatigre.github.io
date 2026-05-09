@@ -246,8 +246,8 @@ body {
 .r-photo-wrap { flex-shrink: 0; }
 
 .r-photo {
-  width: 78px;
-  height: 78px;
+  width: 140px;
+  height: 140px;
   border-radius: var(--r-card);
   object-fit: cover;
   border: 1px solid var(--border);
