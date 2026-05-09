@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+  <!-- Satoshi -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+  <!-- IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+
+  {% if site.analytics.google.tracking_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analytics.google.tracking_id }}');
+  </script>
+  {% endif %}
+</head>
+<body>
+
+  <!-- Ambient background -->
+  <div class="r-grid" aria-hidden="true"></div>
+  <div class="r-blob" aria-hidden="true"></div>
+
+  <!-- Sticky nav -->
+  <nav class="r-nav" id="r-nav">
+    <div class="r-nav-inner">
+      <a href="#top" class="r-nav-brand">YK</a>
+      <ul class="r-nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="r-main" id="top">
+    {{ content }}
+  </main>
+
+  <footer class="r-footer">
+    <div class="r-footer-inner">
+      <span>© {{ 'now' | date: "%Y" }} Yoonjeon Kim</span>
+      <span>KAIST · Graduate School of AI</span>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll glass effect
+    const nav = document.getElementById('r-nav');
+    const onScroll = () => nav.classList.toggle('r-nav--solid', window.scrollY > 16);
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Scroll fade-in
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.r-fade').forEach(el => io.observe(el));
+
+    // Abstract toggle
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.r-abs-btn');
+      if (!btn) return;
+      const body = btn.closest('.r-card, .r-pub').querySelector('.r-abs-body');
+      const open = btn.classList.toggle('open');
+      body.classList.toggle('open', open);
+      btn.querySelector('.r-toggle-label').textContent = open ? 'Abstract −' : 'Abstract +';
+      btn.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
