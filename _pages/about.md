@@ -14,7 +14,7 @@ title: "Yoonjeon Kim"
     <p class="r-tagline">
       Ph.D. candidate at <a href="https://mli.kaist.ac.kr/">KAIST ML &amp; Intelligence Lab</a>,
       advised by <a href="https://sites.google.com/site/yangeh/">Prof. Eunho Yang</a>.
-      Researching <em>reasoning models</em>, diffusion-based language models,
+      Researching reasoning models, diffusion-based language models,
       and multi-modal understanding.
     </p>
     <ul class="r-social">
@@ -190,7 +190,7 @@ url={https://openreview.net/forum?id=Vl3tXPbjSH}
       <h3 class="r-pub-title">Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</h3>
       <p class="r-pub-authors">Doohyuk Jang*, <strong>Yoonjeon Kim*</strong>, Chanjae Park, Hyun Ryu, Eunho Yang &nbsp;·&nbsp; *Equal Contribution</p>
       <div class="r-pub-row">
-        <span class="r-badge r-badge-pre">Preprint</span>
+        <span class="r-badge r-badge-review">Under Review</span>
         <a class="r-link" href="https://arxiv.org/abs/2505.17225">paper</a>
         <a class="r-link" href="https://github.com/ReasoningTrap/ReasoningTrap">code</a>
         <a class="r-link" href="https://reasoningtrap.github.io/">project</a>
