@@ -279,7 +279,6 @@ body {
   color: var(--text2);
   line-height: 1.72;
   margin-bottom: 10px;
-  max-width: 460px;
 }
 
 .r-tagline em    { font-style: normal; color: var(--accent); font-weight: 500; }
