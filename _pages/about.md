@@ -20,10 +20,9 @@ title: "Yoonjeon Kim"
     <ul class="r-social">
       <li><a href="/assets/cv_yoonjeon_kim.pdf"><i class="fas fa-file-alt"></i> CV</a></li>
       <li><a href="mailto:yoonkim313@kaist.ac.kr"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://www.linkedin.com/in/yoonjeon-kim-9898061b0/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
       <li><a href="https://scholar.google.com/citations?user=E7CinH8AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Scholar</a></li>
       <li><a href="https://github.com/akatigre"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://twitter.com/jeonijeoni"><i class="fab fa-twitter"></i> Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/yoonjeon-kim-9898061b0/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
     </ul>
   </div>
 </section>
