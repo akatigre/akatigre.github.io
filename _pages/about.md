@@ -45,8 +45,25 @@ title: "Yoonjeon Kim"
         <a class="r-link" href="https://drive.google.com/file/d/1n3cKn0jOWSnvmLhdUh2AxT3j3nbNnxVi/view?usp=drive_link"><i class="fas fa-file-pdf"></i> paper</a>
         <a class="r-link" href="https://github.com/akatigre/MASA-RL"><i class="fab fa-github"></i> code</a>
         <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+        <button class="r-bib-btn" aria-expanded="false"><span class="r-bib-label">BibTeX</span></button>
       </div>
       <div class="r-abs-body">Recent research on reasoning models explores the meta-awareness of language models, including their ability to determine optimal thinking duration, recognize knowledge boundaries, and structure concept-level thinking. While current large reasoning models depend solely on answer-based verification, we show that adding meta-awareness objectives leads to significant performance gains over models without such meta-knowledge. MAPR utilizes a self-generated task of predicting rollout statistics — specifically length, pass-rate, and concepts used — allowing for verification against the actual statistics. Furthermore, by leveraging this self-predictive capability, the model can regulate its reasoning behavior by (i) filtering out trivial or unsolvable prompts, (ii) reducing lengthy generations that tend to be incorrect, and (iii) generating hints relevant to the problem. MAPR yields significant improvements in both accuracy and training efficiency on various reasoning benchmarks: a 1.28× GRPO training speedup, 83.18% gain in accuracy on AIME25, and 13.04% average gain over six mathematics benchmarks.</div>
+      <div class="r-bib-body">
+        <div class="r-bib-inner">
+          <div class="r-bib-header">
+            <span class="r-bib-label-sm">BibTeX</span>
+            <button class="r-bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          </div>
+          <code class="r-bib-code">@inproceedings{
+anonymous2026verifying,
+title={Verifying Meta-Awareness via Predictive Rewards in Reasoning Models},
+author={Yoonjeon Kim, Doohyuk Jang, Eunho Yang},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=Vl3tXPbjSH}
+}</code>
+        </div>
+      </div>
     </article>
 
     <article class="r-card">
@@ -77,8 +94,25 @@ title: "Yoonjeon Kim"
         <a class="r-link" href="https://github.com/augclip/augclip_eval"><i class="fab fa-github"></i> code</a>
         <a class="r-link" href="https://augclip.github.io/"><i class="fas fa-globe"></i> project</a>
         <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+        <button class="r-bib-btn" aria-expanded="false"><span class="r-bib-label">BibTeX</span></button>
       </div>
       <div class="r-abs-body">The development of vision-language and generative models has significantly advanced text-guided image editing, which seeks the preservation of core elements in the source image while implementing modifications based on the target text. However, existing metrics have a context-blindness problem, indiscriminately applying the same evaluation criteria on completely different pairs of source image and target text, biasing towards either modification or preservation. Directional CLIP similarity, the only metric that considers both source image and target text, is also biased towards modification aspects. We propose AugCLIP, a context-aware metric that adaptively coordinates preservation and modification aspects depending on the specific context. This is done by deriving the CLIP representation of an ideally edited image using a multi-modal large language model to augment textual descriptions, then calculating a modification vector through a hyperplane that separates source and target attributes in CLIP space. Extensive experiments on five benchmark datasets show that AugCLIP aligns remarkably well with human evaluation standards, outperforming existing metrics.</div>
+      <div class="r-bib-body">
+        <div class="r-bib-inner">
+          <div class="r-bib-header">
+            <span class="r-bib-label-sm">BibTeX</span>
+            <button class="r-bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          </div>
+          <code class="r-bib-code">@InProceedings{Kim_2025_CVPR,
+    author    = {Kim, Yoonjeon and Ryu, Soohyun and Jung, Yeonsung and Lee, Hyunkoo and Kim, Joowon and Yang, June Yong and Hwang, Jaeryong and Yang, Eunho},
+    title     = {Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {23474-23483}
+}</code>
+        </div>
+      </div>
     </article>
 
   </div>
@@ -120,8 +154,25 @@ title: "Yoonjeon Kim"
         <a class="r-link" href="https://drive.google.com/file/d/1n3cKn0jOWSnvmLhdUh2AxT3j3nbNnxVi/view?usp=drive_link">paper</a>
         <a class="r-link" href="https://github.com/akatigre/MASA-RL">code</a>
         <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+        <button class="r-bib-btn" aria-expanded="false"><span class="r-bib-label">BibTeX</span></button>
       </div>
       <div class="r-abs-body">Recent research on reasoning models explores the meta-awareness of language models, including their ability to determine optimal thinking duration, recognize knowledge boundaries, and structure concept-level thinking. While current large reasoning models depend solely on answer-based verification, we show that adding meta-awareness objectives leads to significant performance gains over models without such meta-knowledge. MAPR utilizes a self-generated task of predicting rollout statistics — specifically length, pass-rate, and concepts used — allowing for verification against the actual statistics. Furthermore, by leveraging this self-predictive capability, the model can regulate its reasoning behavior by (i) filtering out trivial or unsolvable prompts, (ii) reducing lengthy generations that tend to be incorrect, and (iii) generating hints relevant to the problem. MAPR yields significant improvements in both accuracy and training efficiency on various reasoning benchmarks: a 1.28× GRPO training speedup, 83.18% gain in accuracy on AIME25, and 13.04% average gain over six mathematics benchmarks.</div>
+      <div class="r-bib-body">
+        <div class="r-bib-inner">
+          <div class="r-bib-header">
+            <span class="r-bib-label-sm">BibTeX</span>
+            <button class="r-bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          </div>
+          <code class="r-bib-code">@inproceedings{
+anonymous2026verifying,
+title={Verifying Meta-Awareness via Predictive Rewards in Reasoning Models},
+author={Yoonjeon Kim, Doohyuk Jang, Eunho Yang},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=Vl3tXPbjSH}
+}</code>
+        </div>
+      </div>
     </div>
 
     <div class="r-pub">
@@ -157,8 +208,25 @@ title: "Yoonjeon Kim"
         <a class="r-link" href="https://github.com/augclip/augclip_eval">code</a>
         <a class="r-link" href="https://augclip.github.io/">project</a>
         <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+        <button class="r-bib-btn" aria-expanded="false"><span class="r-bib-label">BibTeX</span></button>
       </div>
       <div class="r-abs-body">The development of vision-language and generative models has significantly advanced text-guided image editing, which seeks the preservation of core elements in the source image while implementing modifications based on the target text. However, existing metrics have a context-blindness problem, indiscriminately applying the same evaluation criteria on completely different pairs of source image and target text, biasing towards either modification or preservation. We propose AugCLIP, a context-aware metric that adaptively coordinates preservation and modification aspects depending on the specific context of a given source image and target text. This is done by deriving the CLIP representation of an ideally edited image using a multi-modal large language model to augment textual descriptions, then calculating a modification vector through a hyperplane that separates source and target attributes in CLIP space. Extensive experiments on five benchmark datasets show that AugCLIP aligns remarkably well with human evaluation standards, outperforming existing metrics.</div>
+      <div class="r-bib-body">
+        <div class="r-bib-inner">
+          <div class="r-bib-header">
+            <span class="r-bib-label-sm">BibTeX</span>
+            <button class="r-bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          </div>
+          <code class="r-bib-code">@InProceedings{Kim_2025_CVPR,
+    author    = {Kim, Yoonjeon and Ryu, Soohyun and Jung, Yeonsung and Lee, Hyunkoo and Kim, Joowon and Yang, June Yong and Hwang, Jaeryong and Yang, Eunho},
+    title     = {Preserve or Modify? Context-Aware Evaluation for Balancing Preservation and Modification in Text-Guided Image Editing},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {23474-23483}
+}</code>
+        </div>
+      </div>
     </div>
 
     <div class="r-pub">
@@ -167,6 +235,25 @@ title: "Yoonjeon Kim"
       <div class="r-pub-row">
         <span class="r-badge r-badge-conf">ICLR 2023</span>
         <a class="r-link" href="https://openreview.net/forum?id=47B_ctC4pJ">paper</a>
+        <button class="r-abs-btn" aria-expanded="false"><span class="r-toggle-label">Abstract +</span></button>
+        <button class="r-bib-btn" aria-expanded="false"><span class="r-bib-label">BibTeX</span></button>
+      </div>
+      <div class="r-abs-body">With the advantages of fast inference and human-friendly flexible manipulation, image-agnostic style manipulation via text guidance enables new applications that were not previously available. The state-of-the-art text-guided image-agnostic manipulation method embeds the representation of each channel of StyleGAN independently in the CLIP space, and provides it in the form of a Dictionary to quickly find the channel-wise manipulation direction during inference. However, this dictionary — constructed by controlling single channels individually — is limited in accommodating the versatility of text guidance since the collective and interactive relation among multiple channels is not considered. Indeed, it fails to discover a large portion of manipulation directions that can be found by existing methods which manually manipulate the latent space without texts. To alleviate this, we propose a novel method that learns a Dictionary whose entry corresponds to the representation of a single channel by taking into account the manipulation effect coming from the interaction with multiple other channels. We demonstrate that our strategy resolves the inability of previous methods in finding diverse known directions from unsupervised methods and unknown directions from random text, while maintaining real-time inference speed and disentanglement ability.</div>
+      <div class="r-bib-body">
+        <div class="r-bib-inner">
+          <div class="r-bib-header">
+            <span class="r-bib-label-sm">BibTeX</span>
+            <button class="r-bib-copy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          </div>
+          <code class="r-bib-code">@inproceedings{
+kim2023learning,
+title={Learning Input-agnostic Manipulation Directions in Style{GAN} with Text Guidance},
+author={Yoonjeon Kim and Hyunsu Kim and Junho Kim and Yunjey Choi and Eunho Yang},
+booktitle={The Eleventh International Conference on Learning Representations},
+year={2023},
+url={https://openreview.net/forum?id=47B_ctC4pJ}
+}</code>
+        </div>
       </div>
     </div>
 
@@ -174,7 +261,7 @@ title: "Yoonjeon Kim"
       <h3 class="r-pub-title">Sequential Targeting: A Continual Learning Approach for Data Imbalance in Text Classification</h3>
       <p class="r-pub-authors">Joel Jang, <strong>Yoonjeon Kim</strong>, Kyoungho Choi, Sungho Suh</p>
       <div class="r-pub-row">
-        <span class="r-badge r-badge-conf">Expert Systems with Applications 2021</span>
+        <span class="r-badge r-badge-journal">Expert Systems with Applications 2021</span>
         <a class="r-link" href="https://www.sciencedirect.com/science/article/abs/pii/S095741742100508X">paper</a>
       </div>
     </div>

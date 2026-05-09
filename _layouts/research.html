@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="auto">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1117" media="(prefers-color-scheme: dark)">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <!-- Satoshi -->
+  <!-- Open Graph -->
+  <meta property="og:title"       content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="{{ page.url | absolute_url }}">
+  <meta property="og:image"       content="{{ '/assets/images/yjk_profile.png' | absolute_url }}">
+
+  <!-- Satoshi (preconnect + load) -->
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+
   <!-- IBM Plex Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <!-- Icons -->
+
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
-  <!-- Styles -->
+
+  <!-- Site styles -->
   <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
 
   {% if site.analytics.google.tracking_id %}
@@ -34,15 +43,13 @@
 </head>
 <body>
 
-  <!-- Ambient background -->
-  <div class="r-grid" aria-hidden="true"></div>
-  <div class="r-blob" aria-hidden="true"></div>
+  <div class="r-grid"  aria-hidden="true"></div>
+  <div class="r-blob"  aria-hidden="true"></div>
 
-  <!-- Sticky nav -->
-  <nav class="r-nav" id="r-nav">
+  <nav class="r-nav" id="r-nav" role="navigation" aria-label="Site navigation">
     <div class="r-nav-inner">
-      <a href="#top" class="r-nav-brand">YK</a>
-      <ul class="r-nav-links">
+      <a href="#top" class="r-nav-brand" aria-label="Back to top">YK</a>
+      <ul class="r-nav-links" role="list">
         <li><a href="#research">Research</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
@@ -57,7 +64,7 @@
     {{ content }}
   </main>
 
-  <footer class="r-footer">
+  <footer class="r-footer" role="contentinfo">
     <div class="r-footer-inner">
       <span>© {{ 'now' | date: "%Y" }} Yoonjeon Kim</span>
       <span>KAIST · Graduate School of AI</span>
@@ -65,29 +72,125 @@
   </footer>
 
   <script>
-    // Nav scroll glass effect
+  (function () {
+    /* ── Nav solidify on scroll ── */
     const nav = document.getElementById('r-nav');
-    const onScroll = () => nav.classList.toggle('r-nav--solid', window.scrollY > 16);
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('r-nav--solid', window.scrollY > 16);
+    }, { passive: true });
 
-    // Scroll fade-in
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    /* ── Active nav highlighting via IntersectionObserver ── */
+    const sections  = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.r-nav-links a');
+
+    const sectionIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => {
+            const active = a.getAttribute('href') === '#' + entry.target.id;
+            a.classList.toggle('active', active);
+          });
+        }
       });
-    }, { threshold: 0.07 });
-    document.querySelectorAll('.r-fade').forEach(el => io.observe(el));
+    }, { rootMargin: '-32% 0px -60% 0px' });
 
-    // Abstract toggle
-    document.addEventListener('click', e => {
+    sections.forEach(s => sectionIO.observe(s));
+
+    /* ── Scroll fade-in (sections) ── */
+    const fadeIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); fadeIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.06 });
+
+    document.querySelectorAll('.r-fade').forEach(el => fadeIO.observe(el));
+
+    /* ── Staggered child reveal per section ── */
+    const staggerIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const kids = entry.target.querySelectorAll(
+          '.r-card, .r-pub, .r-news-item, .r-tl-item, .r-proj, .r-talk, .r-edu-item'
+        );
+        kids.forEach((el, i) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(10px)';
+          el.style.transition = `opacity 0.42s ease ${i * 65}ms, transform 0.42s ease ${i * 65}ms`;
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+          }));
+        });
+        staggerIO.unobserve(entry.target);
+      });
+    }, { threshold: 0.05 });
+
+    document.querySelectorAll('.r-section').forEach(s => staggerIO.observe(s));
+
+    /* ── Abstract toggle (click + keyboard) ── */
+    document.addEventListener('click', handleAbstract);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        const btn = e.target.closest('.r-abs-btn');
+        if (btn) { e.preventDefault(); handleAbstract({ target: btn }); }
+      }
+    });
+
+    function handleAbstract(e) {
       const btn = e.target.closest('.r-abs-btn');
       if (!btn) return;
-      const body = btn.closest('.r-card, .r-pub').querySelector('.r-abs-body');
+      const wrap = btn.closest('.r-card, .r-pub');
+      const body = wrap && wrap.querySelector('.r-abs-body');
+      if (!body) return;
       const open = btn.classList.toggle('open');
       body.classList.toggle('open', open);
       btn.querySelector('.r-toggle-label').textContent = open ? 'Abstract −' : 'Abstract +';
-      btn.setAttribute('aria-expanded', open);
+      btn.setAttribute('aria-expanded', String(open));
+    }
+
+    /* ── BibTeX toggle ── */
+    document.addEventListener('click', handleBibtex);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        const btn = e.target.closest('.r-bib-btn');
+        if (btn) { e.preventDefault(); handleBibtex({ target: btn }); }
+      }
     });
+
+    function handleBibtex(e) {
+      const btn = e.target.closest('.r-bib-btn');
+      if (!btn) return;
+      const wrap = btn.closest('.r-card, .r-pub');
+      const body = wrap && wrap.querySelector('.r-bib-body');
+      if (!body) return;
+      const open = btn.classList.toggle('open');
+      body.classList.toggle('open', open);
+      btn.querySelector('.r-bib-label').textContent = open ? 'BibTeX −' : 'BibTeX';
+      btn.setAttribute('aria-expanded', String(open));
+    }
+
+    /* ── Copy BibTeX ── */
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.r-bib-copy');
+      if (!btn) return;
+      const code = btn.closest('.r-bib-inner').querySelector('.r-bib-code');
+      if (!code) return;
+      navigator.clipboard.writeText(code.textContent.trim()).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2200);
+      }).catch(() => {
+        /* fallback: select text */
+        const range = document.createRange();
+        range.selectNodeContents(code);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+      });
+    });
+  })();
   </script>
 </body>
 </html>
