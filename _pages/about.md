@@ -13,10 +13,15 @@ Hello, I am a Ph.D candidate at [Machine Learning and Intelligence Lab](https://
 Currently my research interest lies in **enhancing reasoning model in both language and multi-modal domains**. More specifically, I am focusing on the thinking ability of diffusion-based large language models, in its natural way.
 
 ## Publications
-- **<font size="4">Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning</font>**
-[[paper]](https://drive.google.com/file/d/1xuB_Dz8K7sPWtGeH4sP-ag4K7ncaJwI3/view?usp=sharing) [[code]](https://github.com/akatigre/MASA-RL) \\
-**Yoonjeon Kim\***, Doohyuk Jang\*, Eunho Yang (*equal contribution) \\
-<span style="color:darkred">Preprint</span>
+- **<font size="4">Efficient Reinforcement for Visual-Textual Thinking with Discrete Diffusion Model</font>**
+[[paper]](https://drive.google.com/file/d/1h7yRqmKcIQcUClbH7h715Z77QWnCRB6n/view?usp=drive_link) \\
+**Yoonjeon Kim**, Yuhta Takida, Chieh-Hsin Lai, Eunho Yang, Yuki Mitsufuji \\
+<span style="color:darkred">Under Review</span>
+
+- **<font size="4">Verifying Meta-Awareness via Predictive Rewards in Reasoning Models</font>**
+[[paper]](https://drive.google.com/file/d/1n3cKn0jOWSnvmLhdUh2AxT3j3nbNnxVi/view?usp=drive_link) [[code]](https://github.com/akatigre/MASA-RL) \\
+**Yoonjeon Kim\***, Doohyuk Jang\*, Eunho Yang (*Equal Contribution) \\
+<span style="color:darkred">**ICML**</span> 2026
 
 - **<font size="4">Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</font>**
 [[paper]](https://arxiv.org/abs/2505.17225) [[code]](https://github.com/ReasoningTrap/ReasoningTrap) [[project page]](https://reasoningtrap.github.io/) \\
@@ -42,6 +47,11 @@ Joel Jang, **Yoonjeon Kim**, Kyoungho Choi, Sungho Suh \\
 - **<font size="4">AI Technology Seminar hosted by KAIST AI Graduate School</font>** [[link]](https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=46270)
 
 ## Work Experience
+- Research Intern, **SONY Research**, Tokyo, Japan, <font size="3">Jan. 2026 - June 2026 (Ongoing)</font>
+  - Mentored by [Yuhta Takida](https://scholar.google.com/citations?user=ahqdEYUAAAAJ&hl=ja) and [Chieh-Hsin (Jesse) Lai](https://chiehhsinjesselai.github.io/)
+  - Multi-modal Discrete Diffusion Model
+  - Reinforcement Learning on Multi-modal Reasoning
+
 - Research Intern, **NAVER Cloud**, <font size="3"> July. 2023 - Oct. 2023 </font>
 
 ## Education
