@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -20,7 +20,7 @@ title                    : "Yoonjeon Kim"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yoonjeon Kim"
-description              : "Ph.D. Student at KAIST"
+description              : "Ph.D. Candidate in Artificial Intelligence at KAIST"
 url                      : "https://akatigre.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "akatigre/akatigre.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,15 +104,15 @@ analytics:
 author:
   name             : "Yoonjeon Kim"
   avatar           : "/assets/images/yjk_profile.png"
-  bio              : "Ph.D student at Graduate School of AI, Korea Advanced Institute of Science and Technology (KAIST)"
+  bio              : "Ph.D. candidate in Artificial Intelligence at KAIST. Expected graduation: February 2027."
   location         : "Daejeon, South Korea"
   links:
-    - label: "CV"
-      icon: "fas fa-download"
-      url: "/assets/cv_yoonjeon_kim.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yoonkim313@kaist.ac.kr"
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/yoonjeon_CV.pdf"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=E7CinH8AAAAJ&hl=en"
@@ -292,4 +292,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
