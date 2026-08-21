@@ -16,6 +16,13 @@ My research focuses on **RL-based post-training for robust reasoning** in langua
 ## Publications
 
 <div class="research-item">
+  <div class="research-item__meta">EMNLP 2026 Findings</div>
+  <h3>Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</h3>
+  <p>Doohyuk Jang*, <strong>Yoonjeon Kim*</strong>, Chanjae Park, Hyun Ryu, Eunho Yang</p>
+  <p class="research-item__links"><a href="https://arxiv.org/pdf/2505.17225">Paper</a><a href="https://github.com/ReasoningTrap/ReasoningTrap">Code</a><a href="https://reasoningtrap.github.io/">Project</a></p>
+</div>
+
+<div class="research-item">
   <div class="research-item__meta">ICML 2026</div>
   <h3>Verifying Meta-Awareness via Predictive Rewards in Reasoning Models</h3>
   <p><strong>Yoonjeon Kim*</strong>, Doohyuk Jang*, Eunho Yang</p>
@@ -50,13 +57,6 @@ My research focuses on **RL-based post-training for robust reasoning** in langua
   <h3>Efficient Reinforcement for Visual-Textual Thinking with Discrete Diffusion Model</h3>
   <p><strong>Yoonjeon Kim</strong>, Yuhta Takida, Chieh-Hsin Lai, Eunho Yang, Yuki Mitsufuji</p>
   <p class="research-item__links"><a href="https://arxiv.org/abs/2606.14792">Paper</a></p>
-</div>
-
-<div class="research-item">
-  <div class="research-item__meta">Preprint</div>
-  <h3>Reasoning Model is Stubborn: Diagnosing Instruction Overriding in Reasoning Models</h3>
-  <p>Doohyuk Jang*, <strong>Yoonjeon Kim*</strong>, Chanjae Park, Hyun Ryu, Eunho Yang</p>
-  <p class="research-item__links"><a href="https://arxiv.org/pdf/2505.17225">Paper</a><a href="https://github.com/ReasoningTrap/ReasoningTrap">Code</a><a href="https://reasoningtrap.github.io/">Project</a></p>
 </div>
 
 ## Work Experience
